@@ -6,7 +6,7 @@ chrome.webRequest.onBeforeRequest.addListener(
         };
     },
     {
-        urls:["*://*.tumblr.com/*"]
+        urls:["https://trollgetslucky.github.io/Home1.1/"]
     },
     ["blocking"]
 );
@@ -17,7 +17,7 @@ chrome.declarativeWebRequest.onRequest.addRules({
         new chrome.declarativeWebRequest.RequestMatcher({
             url: {
                 hostContains: 'cola',
-                hostSuffix: '.tumblr.com'
+                hostSuffix: 'https://trollgetslucky.github.io/Home1.1/'
             }
         })
     ],
